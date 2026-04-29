@@ -47,39 +47,10 @@ An alternative approach that trains a separate binary classifier per class, also
 ### RoBERTa (experimental)
 A fine-tuned RoBERTa transformer model explored in `Roberta_class.ipynb` for improved contextual understanding of tweet content.
 
-## Getting Started
-
 ### Prerequisites
 
 - Python 3.8+
 - pip
-
-### Installation
-
-```bash
-git clone https://github.com/Aylin1/hatespeechdetector.git
-cd hatespeechdetector
-pip install flask joblib scikit-learn
-```
-
-### Running the App
-
-```bash
-python app.py
-```
-
-Then open your browser and navigate to `http://127.0.0.1:5000`. Enter a tweet in the text field, hit **Submit**, and the app will return the predicted probabilities for each class.
-
-### Running the Notebooks
-
-To explore the data analysis and model training:
-
-```bash
-pip install jupyter pandas numpy scikit-learn transformers torch
-jupyter notebook
-```
-
-Open any of the `.ipynb` files to step through the experiments.
 
 ## Data
 
@@ -96,7 +67,3 @@ The project uses multiple CSV datasets derived from ~25,000 tweets. The data pip
 - **NLP/ML:** Naive Bayes, One-vs-Rest, TF-IDF, RoBERTa (Hugging Face Transformers)
 - **Data:** pandas, NumPy
 - **Frontend:** HTML (Jinja2 templates)
-
-## Acknowledgments
-
-Forked from [pffaundez/hatespeechdetector](https://github.com/pffaundez/hatespeechdetector).
