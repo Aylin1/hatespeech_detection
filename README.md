@@ -2,7 +2,6 @@
 
 An NLP-based classification pipeline and web application that classifies tweets into three categories: **Hate Speech**, **Offensive Language**, and **None of the Above**. The project compares multiple machine learning approaches (Naive Bayes, RoBERTa, DistilBERT) and deploys the best-performing model via a Flask web app and Hugging Face Hub.
 
-> University project | M.Sc. Project Management & Data Science, HTW Berlin | CRISP-DM methodology
 
 ## Project Overview
 
