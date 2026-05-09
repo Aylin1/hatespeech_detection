@@ -2,7 +2,7 @@
 
 An NLP-based classification pipeline and web application that classifies tweets into three categories: **Hate Speech**, **Offensive Language**, and **None of the Above**. The project compares multiple machine learning approaches (Naive Bayes, RoBERTa, DistilBERT) and deploys the best-performing model via a Flask web app and Hugging Face Hub.
 
-> University project (team of 6) | M.Sc. Project Management & Data Science, HTW Berlin | CRISP-DM methodology
+> University project | M.Sc. Project Management & Data Science, HTW Berlin | CRISP-DM methodology
 
 ## Project Overview
 
@@ -73,20 +73,6 @@ The project uses multiple CSV datasets derived from ~25,000 tweets. The data pip
 3. **Preprocessing:** Lowercasing, URL/mention removal, spelling correction, emoji-to-text conversion, hashtag cleaning, and class balancing via oversampling.
 4. **Splitting:** Standard train/test split (80/20) for model evaluation.
 
-## Getting Started
-
-### Prerequisites
-
-- Python 3.8+
-- pip
-
-### Installation
-
-```bash
-git clone https://github.com/Aylin1/hatespeech_detection.git
-cd hatespeech_detection
-pip install flask joblib scikit-learn pandas numpy transformers tensorflow torch textblob emoji imblearn seaborn matplotlib nltk
-```
 
 ### Running the Web App
 
@@ -95,14 +81,6 @@ python app.py
 ```
 
 Then open `http://127.0.0.1:5000` in your browser. Enter a tweet and get classification probabilities for each category.
-
-### Running the Notebooks
-
-```bash
-jupyter notebook modelling.ipynb        # Core pipeline with DistilBERT
-jupyter notebook Roberta_class.ipynb    # RoBERTa experiments
-jupyter notebook bayesnaiveclass.ipynb  # Naive Bayes baseline
-```
 
 ## Tech Stack
 
